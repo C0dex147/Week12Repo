@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>2023 Track Day Entree</h1>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="racerName">Name of Racer</label>
+                        <input type ="text" name="racerName" id="racerName">
+                    </div>
+
+                    <div>
+                        <label for="carYear">Car Year</label>
+                        <input type ="text" name="carYear" id="carYear">
+                    </div>
+
+                    <div>
+                        <label for="carMake">Car Make</label>
+                        <input type ="text" name="carMake" id="carMake">
+                    </div>
+
+                    <div>
+                        <label for="carModel">Car Model</label>
+                        <input type ="text" name="carModel" id="carModel">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+                <td>
+                    <table class="list" id="raceList">
+                        <thead>
+                            <tr>
+                                <th>Name of Racer</th>
+                                <th>Car Year</th>
+                                <th>Car Make </th>
+                                <th>Car Model</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+           
+    
+            </td>
+        </tr>
+    </table>
+    <script src="./CrudApp.js"></script>
+</body>
+</html>
